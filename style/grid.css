@@ -1,0 +1,12 @@
+.container{
+    display: grid;
+    grid-template-columns: auto 1fr 200px;
+    height: 300px;
+}
+
+.grid-item:first-child{
+    background-color: orangered;
+}
+.grid-item:last-child{
+    background-color: green;
+}
