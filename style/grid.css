@@ -1,12 +1,33 @@
 .container{
     display: grid;
     grid-template-columns: auto 1fr 200px;
+    grid-template-rows: 1fr 2fr;
     height: 300px;
+    gap: 10px;
+    padding: 10px;
+}
+.container div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header{
+    background-color: red;
 }
 
-.grid-item:first-child{
-    background-color: orangered;
+.sidebar{
+    background-color: yellow;
 }
-.grid-item:last-child{
-    background-color: green;
+.content{
+    background-color: black;
+    color: white;
+}
+.footer{
+    background-color: bisque;
+}
+
+.bottom{
+    background-color: brown;
 }
