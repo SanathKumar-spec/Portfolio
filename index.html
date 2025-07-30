@@ -3,20 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Blog</title>
+    <style>
+        *{
+            font-family: "Roboto", sans-serif;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        header{
+            text-align: center;
+        }
+
+        header h1{
+            margin: 0;
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        img{
+            width: 100%;
+        }
+
+        .blog-1, .blog-2, .blog-3, .blog-4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: gray;
+            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            overflow: hidden;
+ 
+        }
+
+        .blog-4 video, .blog-3 video{
+            object-fit: cover;
+            width: 100%;
+            max-height: 600px;
+            object-position: center;
+        }
+
+        .blog p{
+            padding: 10px;
+        }
+
+        footer{
+            text-align: center;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            .blog{
+                background-color: rgb(233, 233, 233);
+            }
+            *{
+                font-size: 14px;
+            }
+
+            .blog p{
+                text-align: start;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Example for Heading</h1>
-    <h2>Hello world</h2>
-    <h3>Hello world</h3>
-    <h4>Hello world</h4>
-    <h5>Hello world</h5>
-    <h6>Hello world</h6>
+    <header>
+        <h1>Bentley Mulliner</h1>
+        <h3>The Pinnacle of Bespoke Luxury</h3>
+        <p></p>
+    </header>
+    <main class="main-container">
+        <div class="blog blog-1">
+            <img src="Mulliner Article Teaser 4.jpg">
+            <h2 style="margin-bottom: 0;">Mulliner-2025</h2>
+            <p>Bentley Mulliner represents the highest expression of luxury, where every detail is handcrafted to perfection. From bespoke interiors to exclusive finishes, it offers limitless personalization. This is not just a car—it’s a statement of individuality and timeless elegance.</p>
+        </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing <u>elit. Debitis quod in,</u>  <i>ipsum sunt enim aliquam. Dolore deleniti sunt neque</i> <br> eligendi, vel ipsum, nesciunt ut possimus tenetur magnam nemo a totam!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur quo qui at natus facilis perferendis? Repellat, <hr>
-         eos explicabo iste magni itaque quis cum, voluptatibus provident alias at autem rerum enim error nam sapiente optio delectus voluptas repudiandae? Minima, laudantium fugit! Cupiditate ipsa tempore quos eius, id illum molestias consectetur inventore rerum. Eaque voluptate pariatur dolore rerum accusamus facere veritatis asperiores aliquam dolores quasi, nesciunt quod culpa, voluptatum quae fugit molestias maiores officia illum? Magni delectus facere illo nostrum sit, reiciendis debitis doloremque est neque asperiores omnis illum obcaecati nisi voluptate aut explicabo exercitationem non vitae tempora eos vero ab.</p>
-    <img src="image.png" alt="">
+        <div class="blog blog-2">
+            <img src="cropped.jpg">
+            <h2 style="margin-bottom: 0;">Mulliner Coachbuilt</h2>
+            <p>The ultimate in personal commissioning, Mulliner offers ultra-exclusive, one-of-one and limited-series vehicles that redefine bespoke luxury. The Mulliner Coachbuilt team—comprising visionary designers, master engineers, and skilled artisans—works tirelessly to transform your unique vision into reality. Every detail, from the finest materials to handcrafted finishes, reflects your personal taste, ensuring a creation that is truly unmatched in the world of automotive excellence.</p>
+        </div>
+        <div class="blog blog-3">
+            <video controls width="1000">
+                <source src="The new Flying Spur Mulliner.mp4" type="video/mp4">
+            </video>
+            <p>Experience the epitome of handcrafted luxury with the Bentley Mulliner Flying Spur. This masterpiece combines breathtaking design, peerless comfort, and cutting-edge innovation, all elevated by Mulliner’s bespoke craftsmanship. From exquisite hand-stitched interiors to exclusive custom details, every element reflects unmatched sophistication and individuality. The Flying Spur Mulliner is not just a car—it’s an extraordinary journey tailored to perfection.</p>
+        </div>
+        <div class="blog blog-4">
+            <video controls width="1000">
+                <source src="Bentley Mulliner Silhouette Collection.mp4" type="video/mp4">
+            </video>
+            <p>The Bentley Mulliner Silhouette Collection is a striking embodiment of contemporary luxury and bespoke craftsmanship. Designed for those who seek subtle sophistication, this exclusive collection blends elegant exterior details with beautifully tailored interiors. Featuring unique finishes, refined materials, and meticulous attention to detail, the Silhouette Collection highlights Mulliner’s dedication to creating truly personal and timeless automotive masterpieces.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>This blog is dedicated to exploring the craftsmanship, heritage, and bespoke luxury of Bentley Mulliner. All content is created for educational purposes and showcases the elegance of Mulliner’s design philosophy. Bentley® is a trademark of Bentley Motors Limited, and this blog is not officially affiliated with the brand.</p>
+        © 2025 Sanath Kumar | All Rights Reserved
+
+        Images & videos sourced from Bentley Official Website
+    </footer>
 </body>
 </html>
