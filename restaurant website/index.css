@@ -1,0 +1,106 @@
+* {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-image: url(bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .header {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(2, 2, 16, 0.836);
+        }
+
+        .material-symbols-outlined {
+            color: #FBA72A;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            color: #FBA72A;
+            gap: 10px;
+        }
+
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            font-size: 13px;
+            color: white;
+        }
+
+        .book-btn {
+            padding: 8px 20px;
+            background-color: #FBA72A;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .main {
+            height: 100%;
+            display: flex;
+
+
+        }
+
+        .left-section,
+        .right-section {
+            width: 100%;
+            color: white;
+        }
+
+        .heading {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-section p {
+            margin-bottom: 40px;
+        }
+
+        .right-section img {
+            width: 400px;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
