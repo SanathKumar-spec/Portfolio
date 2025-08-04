@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .child{
+            height: 100px;
+            width: 100px;
+            background-color: skyblue;
+            animation: animate 1.5s ease-out 0.5s infinite;
+            position: absolute;
+        }
+
+        .child:hover{
+            animation-play-state: paused;
+        }
+
+        .main{
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+        }
+
+        @keyframes animate {
+            0% {
+                border-radius: 0;
+                transform:scale(1) rotatez(180deg);
+                
+            }
+
+            50% {
+                border-radius: 50%;
+                background-color: red;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="child">
+        </div>
+    </div>
+</body>
+
+</html>
