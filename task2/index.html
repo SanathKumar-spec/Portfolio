@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            overflow-y: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 100px;
+        }
+
+        .nav-lists {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .main {
+            height: 100vh;
+            display: flex;
+            gap: 90px;
+        }
+
+        .left-section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .right-section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .right-section img{
+            width: 500px;
+        }
+        .text-container{
+            width: 500px;
+            margin-bottom: 100px;
+        }
+
+        .heading-text{
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        .left-section p{
+            margin-bottom: 20px;
+        }
+
+        .download-btn{
+            border: none;
+            padding: 10px 16px;
+            border-radius: 5px;
+            background-color: rgb(222, 82, 105);
+            color: white;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left-header"><p class="logo">Delivery</p></div>
+        <nav class="right-header">
+            <ul class="nav-lists">
+                <li>Home</li>
+                <li>Service</li>
+                <li>Contact</li>
+                <li>How it works</li>
+                <li>Testimonial</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main">
+        <div class="left-section">
+            <div class="text-container">
+                <p class="heading-text"><strong>Home Delivery</strong>  From Stores Near You</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aspernatur porro quaerat eligendi
+                    debitis tenetur quam dolorem impedit commodi eum. Eligendi sint, autem tenetur error quibusdam magni
+                    cum nulla vitae!</p>
+                <button class="download-btn">Download App</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="Task image.webp" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
