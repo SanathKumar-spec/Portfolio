@@ -24,10 +24,10 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
+
     color: #FBA72A;
     gap: 10px;
 }
-
 
 nav {
     display: flex;
@@ -151,4 +151,38 @@ nav ul a:hover {
     transform: rotateZ(90deg);
 }
 
+#menu-icon{
+    display: none;
+}
 
+@media (max-width:800px) {
+    .nav-buttons{
+        display: none;
+    }
+
+    .right-section .main-img{
+        width: 250px;
+        transition: all;
+    }
+
+    .left-section{
+        padding: 10px;
+        border: 1px solid red;
+    }
+
+    .right-section{
+        border: 1px solid red;
+    }
+    #menu-icon{
+        display: inline-block;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+}
